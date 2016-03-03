@@ -5,9 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // Establish namespace. Change to match the name of your application.
-var Css3Foundation = window.Css3Foundation ? window.Css3Foundation : {};
+var UIBookClubExercises = window.UIBookClubExercises ? window.UIBookClubExercises : {};
 
-Css3Foundation.util = {
+UIBookClubExercises.util = {
     /*
     ** Workaround for MobileSafari zoom bug after orientation change.
     ** From: http://adactio.com/journal/4470/
@@ -30,14 +30,14 @@ Css3Foundation.util = {
     }
 };
 
-$.extend(Css3Foundation, {
+$.extend(UIBookClubExercises, {
     /*
     ** Override this to perform any application-wide initialization JavaScript. This should
     ** run on DOM ready for every page in the application, and resides in the main application
     ** JS namespace.
     */
     commonInit: function() {
-        Css3Foundation.util.iosZoomWorkaround();
+        UIBookClubExercises.util.iosZoomWorkaround();
 
         // Other stuff to do as soon as the DOM is ready
     }
