@@ -4,6 +4,9 @@
 # Bundler
 .bundle/
 
+# Bower
+bower_components/
+
 # Compass
 .sass-cache/
 images/icon-*.png
