@@ -1,0 +1,17 @@
+# Mac OS
+.DS_Store
+
+# Bundler
+.bundle/
+
+# Compass
+.sass-cache/
+images/icon-*.png
+styles-compiled/
+scripts-compiled/
+
+# Pow/RVM
+.powenv
+.powrc
+.rvmrc
+tmp/
