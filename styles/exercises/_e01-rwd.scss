@@ -4,3 +4,55 @@
 | are too many to practically be in one file, create a new directory containing
 | styles for that feature:
 */
+$pull-quote-color: darken($bright-yellow, 10);
+
+.e01-rwd {
+  .page {
+    margin: $section-spacing auto;
+    padding: (1.5 * $body-text-line-height) $gutter-width;
+    width: 900px;
+
+    background-color: $content-bg;
+
+    @include border-radius(15px);
+    @include clearfix;
+  }
+
+  .content,
+  .sidebar {
+    float: left;
+  }
+
+  .content {
+    margin-right: 5%;
+    width: 70%;
+  }
+
+  .sidebar {
+    width: 25%;
+  }
+
+  article {
+    @include clearfix;
+
+    .meta {
+      @include secondary-text;
+
+      .connection {
+        color: $secondary-text-color;
+      }
+    }
+
+    .pull-quote {
+      float: right;
+      margin: 0 0 ($body-text-line-height / 2) $column-width;
+
+      border-top: 1px solid $light-stroke;
+      border-bottom: 1px solid $light-stroke;
+      padding: ($body-text-line-height / 2) ($column-width / 2);
+      width: 40%;
+
+      color: $pull-quote-color;
+    }
+  }
+}

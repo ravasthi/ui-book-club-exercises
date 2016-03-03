@@ -109,6 +109,8 @@ h2 {
 h3 {
   margin: 0.75 * $body-text-line-height 0 0;
 
+  color: $tertiary-heading-text-color;
+
   @include large-text;
 }
 
@@ -137,7 +139,7 @@ hr {
 
 ol,
 ul {
-  margin-left: $column-width;
+  margin-left: 1.5 * $column-width;
 }
 
 ol {

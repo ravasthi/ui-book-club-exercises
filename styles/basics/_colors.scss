@@ -45,8 +45,9 @@ $greyish-white   : #f0f0f0;
 | page background or link color—or change the palette entirely—in just one
 | place without a lot of tedious search-and-replace.
 */
-$page-bg         : white;
-$accent-bg       : $greyish-white;
+$page-bg         : $greyish-white;
+$accent-bg       : white;
+$content-bg      : white;
 
 $stroke          : darken($silver, 15);
 $light-stroke    : darken($greyish-white, 10);
@@ -54,24 +55,25 @@ $disabled-stroke : $silver;
 
 /*----------[ text ]------------------------------------------------------------
 */
-$body-text-color        : $charcoal;
-$secondary-text-color   : $grey;
-$light-text-color       : lighten($grey, 15);
-$disabled-text-color    : $silver;
+$body-text-color             : $charcoal;
+$secondary-text-color        : $grey;
+$light-text-color            : lighten($grey, 15);
+$disabled-text-color         : $silver;
 
-$link                   : $blue;
-$visited-link           : $eggplant-purple;
+$link                        : $blue;
+$visited-link                : $eggplant-purple;
 
-$highlighted-text-color : white;
-$heading-text-color     : $leaf-green;
-$subheading-text-color  : $orange;
+$highlighted-text-color      : white;
+$heading-text-color          : $leaf-green;
+$subheading-text-color       : $orange;
+$tertiary-heading-text-color : lighten($grey, 10);
 
-$success-feedback       : darken($leaf-green, 3);
-$success-feedback-bg    : desaturate(lighten($success-feedback, 55), 20);
-$warning-feedback       : darken($bright-yellow, 10);
-$warning-feedback-bg    : lighten($warning-feedback, 48);
-$error-feedback         : darken($red, 10);
-$error-feedback-bg      : lighten($error-feedback, 55);
+$success-feedback            : darken($leaf-green, 3);
+$success-feedback-bg         : desaturate(lighten($success-feedback, 55), 20);
+$warning-feedback            : darken($bright-yellow, 10);
+$warning-feedback-bg         : lighten($warning-feedback, 48);
+$error-feedback              : darken($red, 10);
+$error-feedback-bg           : lighten($error-feedback, 55);
 
 /*----------[ forms ]-----------------------------------------------------------
 */
