@@ -5,7 +5,7 @@
   "authors": [
     "Richa Avasthi <ravasthi@gmail.com>"
   ],
-  "description": "A Compass-based CSS3/HTML5 bootstrap for modern, responsive web apps",
+  "description": "Just what it says on the tin.",
   "main": "index.html",
   "keywords": [
     "compass",
@@ -25,9 +25,12 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "2.2.1",
+    "jquery": "~2.2.1",
     "jquery-ui": "~1.11.4",
     "fiftyfive-util-js": "git@github.com:55minutes/fiftyfive-util-js.git",
     "font-awesome": "~4.5.0"
+  },
+  "resolutions": {
+    "jquery": "~2.2.1"
   }
 }
