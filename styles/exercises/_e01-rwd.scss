@@ -14,8 +14,8 @@ $pull-quote-color: darken($bright-yellow, 10);
 
     background-color: $content-bg;
 
-    @include border-radius(15px);
     @include clearfix;
+    @include border-radius(15px);
   }
 
   .content,
@@ -43,10 +43,29 @@ $pull-quote-color: darken($bright-yellow, 10);
       }
     }
 
+    .photo {
+      float: left;
+
+      margin-right: $column-width;
+      margin-bottom: $vertical-nudge;
+      border: 1px solid $light-stroke;
+      padding: 10px;
+      padding-bottom: 5px;
+      max-width: 50%;
+
+      background-color: white;
+
+      @include single-box-shadow(2px, 2px, 2px, 0, rgba(lighten($silver, 10), 0.5));
+
+      img {
+        width: 100%;
+      }
+    }
+
     .pull-quote {
       float: right;
-      margin: 0 0 ($body-text-line-height / 2) $column-width;
 
+      margin: 0 0 ($body-text-line-height / 2) $column-width;
       border-top: 1px solid $light-stroke;
       border-bottom: 1px solid $light-stroke;
       padding: ($body-text-line-height / 2) ($column-width / 2);
