@@ -19,7 +19,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -159,6 +161,18 @@ ol ol,
 ul ul {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+code,
+pre {
+  font-family: $monospace-text-family;
+}
+
+code {
+  border: 1px solid darken($accent-bg, 6);
+  padding: 1px 2px;
+
+  background-color: $accent-bg;
 }
 
 pre {

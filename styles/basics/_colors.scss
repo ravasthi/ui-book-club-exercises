@@ -46,7 +46,7 @@ $greyish-white   : #f0f0f0;
 | place without a lot of tedious search-and-replace.
 */
 $page-bg         : $greyish-white;
-$accent-bg       : white;
+$accent-bg       : $greyish-white;
 $content-bg      : white;
 
 $stroke          : darken($silver, 15);
