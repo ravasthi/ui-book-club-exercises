@@ -15,6 +15,10 @@
       margin-bottom: 0;
     }
 
+    .exercise-name {
+      font-weight: 600;
+    }
+
     @media (min-width: $screen-md-min) {
       margin: $section-spacing auto;
       padding: (1.5 * $body-text-line-height) $gutter-width;

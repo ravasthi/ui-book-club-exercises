@@ -1,0 +1,51 @@
+/*-----[ sass mixins ]----------------------------------------------------------
+*/
+$faded-purple     : #917c9c;
+$lilac            : #beacc7;
+$light-grey       : #c0c0c0;
+$mid-grey         : #909090;
+$marine-blue      : #306484;
+$light-blue       : #aac7d9;
+$grey-brown       : #95857e;
+$frappuccino      : #c0b1a9;
+$olive-green      : #b1b469;
+$pistachio        : #dcdf9a;
+$creamed-corn     : #f9d56a;
+$goldenrod        : #f0b818;
+$salmon           : #f99969;
+$dusty-orange     : #e56b2e;
+$tarnished-silver : #ccc1bc;
+$champagne        : #e5deda;
+$pastry-cream     : #fffaf7;
+$white            : #ffffff;
+$misty-blue       : #b8d7d9;
+$ocean-bue        : #80b2b6;
+
+.e02-sass-mixins {
+  .page {
+    margin: $section-spacing auto;
+    padding: (1.5 * $body-text-line-height) $gutter-width;
+    max-width: 900px;
+
+    background-color: $content-bg;
+
+    @include clearfix;
+    @include border-radius(15px);
+  }
+
+  .photo {
+    margin-bottom: $body-text-line-height;
+    border: 1px solid $light-stroke;
+    padding: 10px;
+    padding-bottom: 5px;
+    max-width: 100%;
+
+    background-color: white;
+
+    @include single-box-shadow(2px, 2px, 2px, 0, rgba(lighten($silver, 10), 0.5));
+
+    img {
+      width: 100%;
+    }
+  }
+}
